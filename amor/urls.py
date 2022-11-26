@@ -22,4 +22,6 @@ urlpatterns = [
 
     #Аутентификация пользователей
     path('signupuser/', views.signupuser, name='signupuser'),
+    #Заполнение данных пользователем
+    path('desc_form/', views.desc_form, name='desc_form'),
 ]
