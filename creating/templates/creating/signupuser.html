@@ -1,3 +1,9 @@
+{% extends 'creating/base.html' %}
+
+
+{% block content %}
+
+
 <h1>Регистрация</h1>
 
 <h2>{{ error }}</h2>
@@ -7,3 +13,5 @@
 {{  form.as_p }}
 <button type="submit">Зарегистрироваться</button>
 </form>
+
+{% endblock %}

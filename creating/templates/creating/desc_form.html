@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'creating/base.html' %}
 <h1>Ввод главных данных</h1>
 
+{% block content %}
 <form method="POST">
     {% csrf_token %}
         {{  form.as_p }}
             <button type="submit">Отправить</button>
 </form>
 
-</body>
-</html>
+{% endblock %}
+
