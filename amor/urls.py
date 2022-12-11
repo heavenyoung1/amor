@@ -22,6 +22,10 @@ urlpatterns = [
 
     #Аутентификация пользователей
     path('signupuser/', views.signupuser, name='signupuser'),
+    path('logoutuser/', views.logoutuser, name='logoutuser'),
+    path('loginuser/', views.loginuser, name='loginuser'),
     #Заполнение данных пользователем
     path('desc_form/', views.desc_form, name='desc_form'),
+    #Домашняя страница
+    path('home/', views.home, name='home'),
 ]
